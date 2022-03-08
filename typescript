@@ -1,0 +1,1017 @@
+Script started on 2022-03-08 13:04:53+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="172" LINES="41"]
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ls
+MARKDOWN.md  README.md  [0m[01;34mbin[0m  [01;34mdb.v4[0m  [01;34mdocopt_c[0m  [01;34mimg[0m  meson.build  p2_vad.pdf  pav_4151.lab  pav_4151.pow  pav_4151.vad  [00;36mpav_4151.wav[0m  [01;34mscripts[0m  [01;34msrc[0m  typescript
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ scripts/
+bash: scripts/: Is a directory
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ cd scripts/
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2/scripts[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2/scripts[00m$ ls
+[0m[01;32mrun_vad.sh[0m  [01;32mvad_evaluation.pl[0m
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2/scripts[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2/scripts[00m$ cd ..
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ scripts/vad_evaluation.pl 
+ Usage: scripts/vad_evaluation.pl file1.lab [file2.lab ....]
+     For each .lab file (reference) a file with extension .vad has to present 
+     (same name and directory)
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ s[Kscripts/vad_evaluation.pl  pav_4151.lab
+**************** pav_4151.lab ****************
+Recall V:  4.85/6.94   69.88%   Precision V:  4.85/6.78   71.52%   F-score V (2)  : 70.20%
+Recall S:  1.20/3.13   38.36%   Precision S:  1.20/3.29   36.51%   F-score S (1/2): 36.86%
+===> pav_4151.lab: 50.869%
+
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ls db.v4/
+[0m[01;34m2014[0m  [01;34m2015[0m  [01;34m201617q1[0m  [01;34m201617q2[0m  [01;34m2017-18q1[0m  [01;34m2017-18q2[0m  [01;34m2018-19q1[0m
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ls db.v4/2014
+pav_4151.lab  pav_4152.lab  pav_4161.lab  pav_4171.lab  pav_4172.lab  pav_4305.lab  pav_4311.lab  pav_4341.lab
+[0m[00;36mpav_4151.wav[0m  [00;36mpav_4152.wav[0m  [00;36mpav_4161.wav[0m  [00;36mpav_4171.wav[0m  [00;36mpav_4172.wav[0m  [00;36mpav_4305.wav[0m  [00;36mpav_4311.wav[0m  [00;36mpav_4341.wav[0m
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ scripts/roo[K[Kun_vad.sh 
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4152.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4161.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4172.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4305.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4311.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4341.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2109.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2110.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2152.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2172.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_1341.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4111.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4112.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41191.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41192.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_412_1.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4132.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4161.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_418.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4311.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4312.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4313.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4321.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4331.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4351.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1121.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1141.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_2151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_1131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4115.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4141.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4161.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4341.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_137.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2121.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2141.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2142.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2191.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_231.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_232.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_233.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2342.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_236.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_237.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_238.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_239.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4111.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4112.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4121.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4122.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4132.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4141.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4161.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4172.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4181.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4182.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4341.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4342.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4351.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4352.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4361.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4362.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4371.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4372.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4382.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4385.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4151.lab ****************
+Recall V:  4.85/6.94   69.88%   Precision V:  4.85/6.78   71.52%   F-score V (2)  : 70.20%
+Recall S:  1.20/3.13   38.36%   Precision S:  1.20/3.29   36.51%   F-score S (1/2): 36.86%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4151.lab: 50.869%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4152.lab ****************
+Recall V: 22.32/28.13  79.34%   Precision V: 22.32/27.78  80.33%   F-score V (2)  : 79.54%
+Recall S:  1.18/6.64   17.74%   Precision S:  1.18/6.99   16.87%   F-score S (1/2): 17.04%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4152.lab: 36.809%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4161.lab ****************
+Recall V:  2.76/3.09   89.25%   Precision V:  2.76/3.62   76.24%   F-score V (2)  : 86.30%
+Recall S:  0.57/1.43   39.75%   Precision S:  0.57/0.90   63.06%   F-score S (1/2): 56.44%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4161.lab: 69.790%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4171.lab ****************
+Recall V:  3.77/5.02   75.07%   Precision V:  3.77/4.65   81.13%   F-score V (2)  : 76.21%
+Recall S:  0.21/1.08   19.21%   Precision S:  0.21/1.46   14.28%   F-score S (1/2): 15.05%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4171.lab: 33.868%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4172.lab ****************
+Recall V:  4.24/5.57   76.17%   Precision V:  4.24/4.46   95.09%   F-score V (2)  : 79.33%
+Recall S:  0.13/0.35   37.87%   Precision S:  0.13/1.46    9.14%   F-score S (1/2): 10.78%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4172.lab: 29.238%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4305.lab ****************
+Recall V:  2.37/3.06   77.34%   Precision V:  2.37/4.09   57.87%   F-score V (2)  : 72.46%
+Recall S:  0.77/2.49   30.79%   Precision S:  0.77/1.46   52.51%   F-score S (1/2): 46.02%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4305.lab: 57.747%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4311.lab ****************
+Recall V: 14.34/18.83  76.16%   Precision V: 14.34/17.67  81.17%   F-score V (2)  : 77.11%
+Recall S:  1.42/4.75   29.91%   Precision S:  1.42/5.91   24.02%   F-score S (1/2): 25.01%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4311.lab: 43.913%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4341.lab ****************
+Recall V:  6.03/10.00  60.30%   Precision V:  6.03/10.45  57.70%   F-score V (2)  : 59.76%
+Recall S:  0.56/4.98   11.24%   Precision S:  0.56/4.53   12.36%   F-score S (1/2): 12.12%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4341.lab: 26.913%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2109.lab ****************
+Recall V:  1.65/2.32   71.18%   Precision V:  1.65/3.19   51.88%   F-score V (2)  : 66.25%
+Recall S:  0.23/1.76   13.04%   Precision S:  0.23/0.90   25.56%   F-score S (1/2): 21.44%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2109.lab: 37.686%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2110.lab ****************
+Recall V:  2.26/2.81   80.44%   Precision V:  2.26/3.43   66.04%   F-score V (2)  : 77.08%
+Recall S:  0.35/1.51   23.12%   Precision S:  0.35/0.90   38.89%   F-score S (1/2): 34.22%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2110.lab: 51.360%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2151.lab ****************
+Recall V:  9.33/13.22  70.56%   Precision V:  9.33/21.20  44.00%   F-score V (2)  : 62.95%
+Recall S:  2.20/14.07  15.62%   Precision S:  2.20/6.09   36.08%   F-score S (1/2): 28.59%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2151.lab: 42.423%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2152.lab ****************
+Recall V:  4.23/6.94   61.01%   Precision V:  4.23/9.10   46.50%   F-score V (2)  : 57.43%
+Recall S:  1.65/6.52   25.37%   Precision S:  1.65/4.36   37.96%   F-score S (1/2): 34.53%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2152.lab: 44.531%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2171.lab ****************
+Recall V:  1.97/2.57   76.60%   Precision V:  1.97/3.60   54.58%   F-score V (2)  : 70.88%
+Recall S:  0.30/1.94   15.49%   Precision S:  0.30/0.90   33.29%   F-score S (1/2): 27.07%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2171.lab: 43.803%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2172.lab ****************
+Recall V:  2.04/2.70   75.52%   Precision V:  2.04/6.53   31.19%   F-score V (2)  : 58.80%
+Recall S:  1.53/6.02   25.40%   Precision S:  1.53/2.19   69.86%   F-score S (1/2): 51.74%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2172.lab: 55.161%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_1341.lab ****************
+Recall V:  1.92/2.07   92.71%   Precision V:  1.92/3.66   52.49%   F-score V (2)  : 80.39%
+Recall S:  0.75/2.49   30.13%   Precision S:  0.75/0.90   83.23%   F-score S (1/2): 61.54%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_1341.lab: 70.337%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4111.lab ****************
+Recall V:  3.49/5.63   61.97%   Precision V:  3.49/6.96   50.13%   F-score V (2)  : 59.18%
+Recall S:  1.29/4.76   27.08%   Precision S:  1.29/3.43   37.58%   F-score S (1/2): 34.88%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4111.lab: 45.429%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4112.lab ****************
+Recall V:  2.22/2.95   75.14%   Precision V:  2.22/6.53   33.92%   F-score V (2)  : 60.45%
+Recall S:  2.34/6.65   35.14%   Precision S:  2.34/3.07   76.13%   F-score S (1/2): 61.73%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4112.lab: 61.088%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41191.lab ****************
+Recall V:  2.48/3.04   81.41%   Precision V:  2.48/5.11   48.47%   F-score V (2)  : 71.67%
+Recall S:  1.00/3.64   27.63%   Precision S:  1.00/1.57   63.99%   F-score S (1/2): 50.66%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41191.lab: 60.253%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41192.lab ****************
+Recall V:  1.95/2.37   82.10%   Precision V:  1.95/6.48   30.02%   F-score V (2)  : 60.95%
+Recall S:  1.51/6.04   24.93%   Precision S:  1.51/1.93   78.03%   F-score S (1/2): 54.72%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41192.lab: 57.751%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_412_1.lab ****************
+Recall V:  3.40/4.22   80.59%   Precision V:  3.40/5.64   60.37%   F-score V (2)  : 75.53%
+Recall S:  0.75/2.99   25.12%   Precision S:  0.75/1.57   47.77%   F-score S (1/2): 40.47%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_412_1.lab: 55.290%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4131.lab ****************
+Recall V:  2.74/3.44   79.51%   Precision V:  2.74/4.09   66.96%   F-score V (2)  : 76.64%
+Recall S:  0.76/2.10   35.87%   Precision S:  0.76/1.46   51.71%   F-score S (1/2): 47.52%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4131.lab: 60.346%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4132.lab ****************
+Recall V:  2.76/3.35   82.41%   Precision V:  2.76/4.09   67.65%   F-score V (2)  : 78.96%
+Recall S:  0.87/2.19   39.70%   Precision S:  0.87/1.46   59.59%   F-score S (1/2): 54.16%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4132.lab: 65.397%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4151.lab ****************
+Recall V:  1.61/2.11   76.42%   Precision V:  1.61/3.19   50.51%   F-score V (2)  : 69.31%
+Recall S:  0.40/1.98   20.36%   Precision S:  0.40/0.90   44.80%   F-score S (1/2): 36.13%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4151.lab: 50.039%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4161.lab ****************
+Recall V:  1.67/2.34   71.39%   Precision V:  1.67/2.56   65.33%   F-score V (2)  : 70.09%
+Recall S:  0.14/1.03   13.63%   Precision S:  0.14/0.81   17.28%   F-score S (1/2): 16.40%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4161.lab: 33.909%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_418.lab ****************
+Recall V:  2.81/3.10   90.74%   Precision V:  2.81/6.17   45.50%   F-score V (2)  : 75.69%
+Recall S:  1.45/4.82   30.16%   Precision S:  1.45/1.74   83.52%   F-score S (1/2): 61.69%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_418.lab: 68.333%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4311.lab ****************
+Recall V:  1.35/1.68   80.53%   Precision V:  1.35/3.56   38.00%   F-score V (2)  : 65.80%
+Recall S:  0.57/2.78   20.60%   Precision S:  0.57/0.90   63.64%   F-score S (1/2): 44.88%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4311.lab: 54.344%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4312.lab ****************
+Recall V:  2.73/3.11   87.64%   Precision V:  2.73/3.75   72.80%   F-score V (2)  : 84.21%
+Recall S:  0.70/1.72   40.68%   Precision S:  0.70/1.08   64.50%   F-score S (1/2): 57.74%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4312.lab: 69.728%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4313.lab ****************
+Recall V:  1.64/1.92   85.27%   Precision V:  1.64/2.95   55.34%   F-score V (2)  : 76.94%
+Recall S:  0.62/1.94   31.88%   Precision S:  0.62/0.90   68.61%   F-score S (1/2): 55.76%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4313.lab: 65.502%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4321.lab ****************
+Recall V:  3.76/4.59   81.85%   Precision V:  3.76/6.78   55.40%   F-score V (2)  : 74.72%
+Recall S:  2.49/5.52   45.18%   Precision S:  2.49/3.32   74.95%   F-score S (1/2): 66.22%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4321.lab: 70.340%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4331.lab ****************
+Recall V:  4.42/5.78   76.47%   Precision V:  4.42/6.53   67.67%   F-score V (2)  : 74.53%
+Recall S:  1.12/3.23   34.58%   Precision S:  1.12/2.48   45.08%   F-score S (1/2): 42.50%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4331.lab: 56.278%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4351.lab ****************
+Recall V:  3.08/3.42   89.88%   Precision V:  3.08/6.06   50.83%   F-score V (2)  : 77.91%
+Recall S:  1.22/4.20   29.12%   Precision S:  1.22/1.57   77.92%   F-score S (1/2): 58.36%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4351.lab: 67.426%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1121.lab ****************
+Recall V:  5.42/8.47   63.94%   Precision V:  5.42/8.48   63.89%   F-score V (2)  : 63.93%
+Recall S:  0.88/3.94   22.33%   Precision S:  0.88/3.94   22.37%   F-score S (1/2): 22.36%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1121.lab: 37.812%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1131.lab ****************
+Recall V:  2.38/3.49   68.00%   Precision V:  2.38/4.03   58.97%   F-score V (2)  : 65.98%
+Recall S:  0.34/2.00   17.17%   Precision S:  0.34/1.46   23.46%   F-score S (1/2): 21.86%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1131.lab: 37.975%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1141.lab ****************
+Recall V:  2.97/3.97   74.70%   Precision V:  2.97/6.01   49.37%   F-score V (2)  : 67.75%
+Recall S:  0.56/3.61   15.66%   Precision S:  0.56/1.57   35.99%   F-score S (1/2): 28.57%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1141.lab: 43.993%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1171.lab ****************
+Recall V:  8.76/12.61  69.45%   Precision V:  8.76/15.62  56.08%   F-score V (2)  : 66.29%
+Recall S:  1.92/8.78   21.84%   Precision S:  1.92/5.77   33.23%   F-score S (1/2): 30.09%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1171.lab: 44.665%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_2151.lab ****************
+Recall V:  3.98/5.32   74.81%   Precision V:  3.98/5.79   68.76%   F-score V (2)  : 73.52%
+Recall S:  0.23/2.04   11.29%   Precision S:  0.23/1.57   14.65%   F-score S (1/2): 13.83%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_2151.lab: 31.882%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_1131.lab ****************
+Recall V:  5.03/7.38   68.18%   Precision V:  5.03/7.61   66.08%   F-score V (2)  : 67.75%
+Recall S:  1.46/4.04   36.16%   Precision S:  1.46/3.81   38.39%   F-score S (1/2): 37.92%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_1131.lab: 50.685%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4115.lab ****************
+Recall V:  1.25/1.42   88.03%   Precision V:  1.25/2.04   61.27%   F-score V (2)  : 80.96%
+Recall S:  0.19/0.98   19.27%   Precision S:  0.19/0.36   52.59%   F-score S (1/2): 39.07%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4115.lab: 56.245%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4131.lab ****************
+Recall V:  7.67/11.49  66.72%   Precision V:  7.67/13.11  58.49%   F-score V (2)  : 64.90%
+Recall S:  0.79/6.23   12.61%   Precision S:  0.79/4.61   17.04%   F-score S (1/2): 15.93%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4131.lab: 32.149%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4141.lab ****************
+Recall V:  3.57/4.68   76.29%   Precision V:  3.57/5.41   65.98%   F-score V (2)  : 73.98%
+Recall S:  0.46/2.30   20.00%   Precision S:  0.46/1.57   29.33%   F-score S (1/2): 26.83%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4141.lab: 44.550%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4161.lab ****************
+Recall V:  1.55/2.17   71.43%   Precision V:  1.55/3.20   48.48%   F-score V (2)  : 65.25%
+Recall S:  0.28/1.93   14.53%   Precision S:  0.28/0.90   31.11%   F-score S (1/2): 25.33%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4161.lab: 40.653%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4171.lab ****************
+Recall V:  4.34/6.06   71.68%   Precision V:  4.34/7.56   57.42%   F-score V (2)  : 68.29%
+Recall S:  2.01/5.23   38.46%   Precision S:  2.01/3.73   53.98%   F-score S (1/2): 49.95%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4171.lab: 58.404%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4341.lab ****************
+Recall V:  3.87/5.30   73.00%   Precision V:  3.87/6.53   59.22%   F-score V (2)  : 69.76%
+Recall S:  1.30/3.96   32.80%   Precision S:  1.30/2.73   47.62%   F-score S (1/2): 43.67%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4341.lab: 55.196%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_137.lab ****************
+Recall V:  2.39/2.66   89.83%   Precision V:  2.39/3.28   72.63%   F-score V (2)  : 85.77%
+Recall S:  0.63/1.53   41.21%   Precision S:  0.63/0.90   70.00%   F-score S (1/2): 61.42%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_137.lab: 72.580%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2121.lab ****************
+Recall V:  3.60/4.42   81.59%   Precision V:  3.60/6.21   58.01%   F-score V (2)  : 75.45%
+Recall S:  1.11/3.72   29.89%   Precision S:  1.11/1.92   57.76%   F-score S (1/2): 48.68%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2121.lab: 60.609%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2141.lab ****************
+Recall V:  2.67/3.99   66.94%   Precision V:  2.67/4.48   59.64%   F-score V (2)  : 65.34%
+Recall S:  0.14/1.95    7.18%   Precision S:  0.14/1.46    9.59%   F-score S (1/2):  8.99%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2141.lab: 24.233%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2142.lab ****************
+Recall V:  2.99/3.58   83.53%   Precision V:  2.99/3.75   79.80%   F-score V (2)  : 82.76%
+Recall S:  0.49/1.25   39.26%   Precision S:  0.49/1.08   45.35%   F-score S (1/2): 43.98%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2142.lab: 60.332%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2171.lab ****************
+Recall V:  3.00/3.67   81.76%   Precision V:  3.00/6.98   42.99%   F-score V (2)  : 69.27%
+Recall S:  2.76/6.74   40.96%   Precision S:  2.76/3.43   80.48%   F-score S (1/2): 67.46%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2171.lab: 68.357%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2191.lab ****************
+Recall V:  3.44/4.11   83.68%   Precision V:  3.44/5.45   63.01%   F-score V (2)  : 78.53%
+Recall S:  0.90/2.92   30.86%   Precision S:  0.90/1.57   57.32%   F-score S (1/2): 48.93%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2191.lab: 61.987%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_231.lab ****************
+Recall V:  3.84/4.97   77.22%   Precision V:  3.84/6.78   56.59%   F-score V (2)  : 71.97%
+Recall S:  2.21/5.15   42.86%   Precision S:  2.21/3.34   66.11%   F-score S (1/2): 59.64%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_231.lab: 65.515%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_232.lab ****************
+Recall V:  2.21/2.95   74.92%   Precision V:  2.21/3.87   57.12%   F-score V (2)  : 70.52%
+Recall S:  0.72/2.38   30.26%   Precision S:  0.72/1.46   49.32%   F-score S (1/2): 43.80%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_232.lab: 55.578%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_233.lab ****************
+Recall V:  2.40/3.46   69.36%   Precision V:  2.40/4.96   48.36%   F-score V (2)  : 63.82%
+Recall S:  0.51/3.07   16.60%   Precision S:  0.51/1.57   32.48%   F-score S (1/2): 27.27%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_233.lab: 41.715%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2342.lab ****************
+Recall V:  1.99/2.39   83.07%   Precision V:  1.99/3.44   57.89%   F-score V (2)  : 76.42%
+Recall S:  0.49/1.94   25.47%   Precision S:  0.49/0.90   54.94%   F-score S (1/2): 44.61%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2342.lab: 58.389%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_236.lab ****************
+Recall V:  2.82/3.36   83.72%   Precision V:  2.82/3.75   75.07%   F-score V (2)  : 81.83%
+Recall S:  0.78/1.71   45.48%   Precision S:  0.78/1.33   58.75%   F-score S (1/2): 55.51%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_236.lab: 67.399%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_237.lab ****************
+Recall V:  4.18/5.32   78.62%   Precision V:  4.18/6.21   67.36%   F-score V (2)  : 76.08%
+Recall S:  0.72/2.74   26.16%   Precision S:  0.72/1.86   38.70%   F-score S (1/2): 35.31%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_237.lab: 51.829%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_238.lab ****************
+Recall V:  3.32/4.56   72.75%   Precision V:  3.32/5.74   57.82%   F-score V (2)  : 69.18%
+Recall S:  0.33/2.75   11.92%   Precision S:  0.33/1.57   20.86%   F-score S (1/2): 18.14%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_238.lab: 35.424%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_239.lab ****************
+Recall V:  4.23/5.71   74.06%   Precision V:  4.23/6.45   65.64%   F-score V (2)  : 72.21%
+Recall S:  0.45/2.66   16.82%   Precision S:  0.45/1.93   23.20%   F-score S (1/2): 21.57%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_239.lab: 39.462%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4111.lab ****************
+Recall V:  2.34/2.92   80.22%   Precision V:  2.34/4.98   47.03%   F-score V (2)  : 70.30%
+Recall S:  0.99/3.63   27.32%   Precision S:  0.99/1.57   63.20%   F-score S (1/2): 50.06%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4111.lab: 59.321%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4112.lab ****************
+Recall V:  0.88/1.29   68.08%   Precision V:  0.88/2.39   36.90%   F-score V (2)  : 58.24%
+Recall S:  0.40/1.90   20.85%   Precision S:  0.40/0.81   49.00%   F-score S (1/2): 38.58%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4112.lab: 47.400%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4121.lab ****************
+Recall V:  2.82/2.99   94.32%   Precision V:  2.82/4.68   60.24%   F-score V (2)  : 84.73%
+Recall S:  1.29/3.15   40.93%   Precision S:  1.29/1.46   88.36%   F-score S (1/2): 71.73%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4121.lab: 77.962%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4122.lab ****************
+Recall V:  1.09/1.26   86.45%   Precision V:  1.09/2.04   53.19%   F-score V (2)  : 76.84%
+Recall S:  0.32/1.27   25.10%   Precision S:  0.32/0.49   65.31%   F-score S (1/2): 49.46%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4122.lab: 61.650%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4131.lab ****************
+Recall V:  9.78/13.83  70.73%   Precision V:  9.78/12.53  78.05%   F-score V (2)  : 72.08%
+Recall S:  0.56/3.31   17.00%   Precision S:  0.56/4.61   12.22%   F-score S (1/2): 12.95%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4131.lab: 30.549%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4132.lab ****************
+Recall V:  7.21/10.60  68.00%   Precision V:  7.21/8.48   85.04%   F-score V (2)  : 70.84%
+Recall S:  0.57/1.84   31.14%   Precision S:  0.57/3.97   14.47%   F-score S (1/2): 16.20%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4132.lab: 33.876%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4141.lab ****************
+Recall V:  2.27/2.94   77.22%   Precision V:  2.27/2.91   78.16%   F-score V (2)  : 77.41%
+Recall S:  0.14/0.77   18.07%   Precision S:  0.14/0.81   17.28%   F-score S (1/2): 17.44%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4141.lab: 36.738%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4151.lab ****************
+Recall V:  1.49/1.85   80.76%   Precision V:  1.49/2.09   71.31%   F-score V (2)  : 78.68%
+Recall S:  0.46/1.05   43.14%   Precision S:  0.46/0.81   56.18%   F-score S (1/2): 52.98%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4151.lab: 64.561%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4161.lab ****************
+Recall V:  2.65/3.37   78.66%   Precision V:  2.65/3.75   70.66%   F-score V (2)  : 76.92%
+Recall S:  0.66/1.76   37.46%   Precision S:  0.66/1.38   47.84%   F-score S (1/2): 45.33%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4161.lab: 59.045%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4171.lab ****************
+Recall V:  3.16/3.78   83.67%   Precision V:  3.16/4.82   65.57%   F-score V (2)  : 79.29%
+Recall S:  0.84/2.50   33.68%   Precision S:  0.84/1.46   57.74%   F-score S (1/2): 50.52%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4171.lab: 63.291%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4172.lab ****************
+Recall V:  2.53/3.00   84.38%   Precision V:  2.53/3.81   66.44%   F-score V (2)  : 80.06%
+Recall S:  0.99/2.27   43.68%   Precision S:  0.99/1.46   67.91%   F-score S (1/2): 61.13%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4172.lab: 69.954%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4181.lab ****************
+Recall V:  2.29/2.85   80.37%   Precision V:  2.29/5.46   41.99%   F-score V (2)  : 67.95%
+Recall S:  1.01/4.18   24.17%   Precision S:  1.01/1.57   64.33%   F-score S (1/2): 48.28%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4181.lab: 57.279%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4182.lab ****************
+Recall V:  2.60/3.64   71.58%   Precision V:  2.60/6.53   39.87%   F-score V (2)  : 61.76%
+Recall S:  1.64/5.57   29.45%   Precision S:  1.64/2.67   61.32%   F-score S (1/2): 50.41%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4182.lab: 55.797%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4341.lab ****************
+Recall V:  3.83/4.47   85.74%   Precision V:  3.83/6.53   58.66%   F-score V (2)  : 78.50%
+Recall S:  1.62/4.32   37.57%   Precision S:  1.62/2.26   71.83%   F-score S (1/2): 60.75%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4341.lab: 69.056%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4342.lab ****************
+Recall V:  3.39/4.30   78.75%   Precision V:  3.39/6.53   51.89%   F-score V (2)  : 71.36%
+Recall S:  1.04/4.18   24.92%   Precision S:  1.04/1.96   53.28%   F-score S (1/2): 43.40%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4342.lab: 55.653%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4351.lab ****************
+Recall V:  2.36/3.02   78.01%   Precision V:  2.36/4.31   54.69%   F-score V (2)  : 71.88%
+Recall S:  0.80/2.75   28.92%   Precision S:  0.80/1.46   54.45%   F-score S (1/2): 46.28%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4351.lab: 57.676%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4352.lab ****************
+Recall V:  3.01/4.08   73.94%   Precision V:  3.01/4.44   67.97%   F-score V (2)  : 72.66%
+Recall S:  0.40/1.82   21.86%   Precision S:  0.40/1.46   27.23%   F-score S (1/2): 25.95%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4352.lab: 43.425%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4361.lab ****************
+Recall V:  1.52/1.64   92.54%   Precision V:  1.52/3.75   40.44%   F-score V (2)  : 73.58%
+Recall S:  1.04/3.27   31.67%   Precision S:  1.04/1.16   89.44%   F-score S (1/2): 65.53%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4361.lab: 69.441%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4362.lab ****************
+Recall V:  2.26/2.70   83.73%   Precision V:  2.26/3.70   61.23%   F-score V (2)  : 78.00%
+Recall S:  0.46/1.89   24.30%   Precision S:  0.46/0.90   51.13%   F-score S (1/2): 41.89%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4362.lab: 57.157%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4371.lab ****************
+Recall V:  1.69/1.85   91.14%   Precision V:  1.69/3.75   45.00%   F-score V (2)  : 75.63%
+Recall S:  1.30/3.36   38.66%   Precision S:  1.30/1.46   88.80%   F-score S (1/2): 70.51%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4371.lab: 73.024%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4372.lab ****************
+Recall V:  1.23/2.07   59.34%   Precision V:  1.23/3.97   30.98%   F-score V (2)  : 50.16%
+Recall S:  0.62/3.36   18.41%   Precision S:  0.62/1.46   42.33%   F-score S (1/2): 33.60%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4372.lab: 41.053%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4382.lab ****************
+Recall V:  4.82/7.21   66.82%   Precision V:  4.82/11.53  41.77%   F-score V (2)  : 59.67%
+Recall S:  2.14/8.85   24.14%   Precision S:  2.14/4.53   47.18%   F-score S (1/2): 39.62%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4382.lab: 48.620%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4385.lab ****************
+Recall V:  2.18/3.24   67.30%   Precision V:  2.18/5.34   40.86%   F-score V (2)  : 59.59%
+Recall S:  0.51/3.67   13.90%   Precision S:  0.51/1.57   32.48%   F-score S (1/2): 25.63%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4385.lab: 39.081%
+
+**************** Summary ****************
+Recall V:287.42/382.74 75.10%   Precision V:287.42/485.70 59.18%   F-score V (2)  : 71.26%
+Recall S: 72.73/271.01 26.84%   Precision S: 72.73/168.05 43.28%   F-score S (1/2): 38.56%
+===> TOTAL: 52.417%
+
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ../P1/p1
+Empleo: ../P1/p1 inputfile [outputfile]
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ 
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ls
+MARKDOWN.md  README.md  [0m[01;34mbin[0m  [01;34mdb.v4[0m  [01;34mdocopt_c[0m  [01;34mimg[0m  meson.build  p2_vad.pdf  pav_4151.lab  pav_4151.pow  pav_4151.vad  [00;36mpav_4151.wav[0m  [01;34mscripts[0m  [01;34msrc[0m  typescript
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ eco[Kho $PATH
+/home/nilllagostera/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2021.825.0_x64__79rhkp1fndgsc:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Cadence/SPB_16.6/openaccess/bin/win32/opt:/mnt/c/Cadence/SPB_16.6/tools/capture:/mnt/c/Cadence/SPB_16.6/tools/pspice:/mnt/c/Cadence/SPB_16.6/tools/specctra/bin:/mnt/c/Cadence/SPB_16.6/tools/fet/bin:/mnt/c/Cadence/SPB_16.6/tools/libutil/bin:/mnt/c/Cadence/SPB_16.6/tools/bin:/mnt/c/Cadence/SPB_16.6/tools/pcb/bin:/mnt/c/Users/Nil Llagostera/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Nil Llagostera/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:.:.
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ which ls
+/usr/bin/ls
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ .
+bash: .: filename argument required
+.: usage: . filename [arguments]
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ padre del actual
+padre: command not found
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ../P1[K[K[K[K[Kpadre del actual.[Kwhich lsecho $PATHls[K../P1/p1scripts/run_vad.sh [6Pls db.v4/2014[Kscripts/vad_evaluation.pl  pav_4151.lab[Kcd ..[K[3Plscd scripts/[3Pscripts/ls[Kp1 tarea1.wav tarea11.txt[9Pbless tarea1.wavp1 tarea1.wav tarea11.txt[9Pbless tarea1.wavp1 tarea1.wav tarea11.txt[9Pbless tarea1.wavp1 tarea1.wav tarea11.txtmake[Kcd PAV/P1p1 tarea1.wav tarea11.txtmake[Kcd PAV/P1p1 tarea1.wav tarea1.txtmake[Kp1 tarea1.wav tarea1.txtmake[Kp1 estereo1.wav estereo1.txt[10Pbless estereo1.wavp1 estereo1.wav estereo1.txt[10Pbless estereo1.wavp1 estereo1.wav estereo1.txt[10Pbless estereo1.wavp1 estereo1.wav estereo1.txt[10Pbless estereo1.wav[2Ptarea1.wavp1 estereo1.wav estereo1.txtls[Kmake[Kfile tarea1.wavp1 tarea1.wav tarea1.txtmake[Kcd PAV/P1[3Pode .d PAV/P1sudo apt upgrade[1Pdatep1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txt[10Psudo apt updatep1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 prova-stereo.wav prova1.txt[2Pestereo1.wav estereo1.txt[10Pbless estereo1.wav[5Pp1 tarea1.wavmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kfile tarea1.wavp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txtmake[Kp1 tarea1.wav tarea11.txte tarea11.txtestereo1.wav estereo1.txtprova-stereo.wav prova1.txtmake[Kp1 prova-stereo.wav prova1.txt[2Pestereo1.wav estereo1.txt[9Pbless estereo1.wav cp tarea1.wav estereo1.wavls[Kp1 estereo1.wav estereo1.txtls[Kbless estereo1.wavls[Kmakep1 tarea1.wav tarea11.txtmake[Kdiff tarea1.txt tarea11.txt ^C
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ cp ../P1/compute[K[K[K[K[K[K[Kpav_analysis.*[K{[K[[K[ch] src
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ninja -C bin
+ninja: Entering directory `bin'
+[0/1] Regenerating build files.[K
+[1mThe Meson build system[0m
+Version: 0.53.2
+Source dir: [1m/home/nilllagostera/PAV/P2[0m
+Build dir: [1m/home/nilllagostera/PAV/P2/bin[0m
+Build type: [1mnative build[0m
+Project name: [1mPáctica 2[0m
+Project version: [1mundefined[0m
+C compiler for the host machine: [1mcc[0m (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04) 9.4.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.34
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Build targets in project: [1m1[0m
+
+Found ninja-1.10.0 at /usr/bin/ninja
+[0/3] Compiling C object 'vad@exe/src_vad.c.o'.[K[0/3] Compiling C object 'vad@exe/src_pav_analysis.c.o'.[K[1/3] Compiling C object 'vad@exe/src_vad.c.o'.[K[2/3] Compiling C object 'vad@exe/src_pav_analysis.c.o'.[K
+[01m[K../src/pav_analysis.c:[m[K In function ‘[01m[Kcompute_zcr[m[K’:
+[01m[K../src/pav_analysis.c:22:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kzcr[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   22 |     float [01;35m[Kzcr[m[K, sum = 0;
+      |           [01;35m[K^~~[m[K
+[2/3] Linking target vad.[K[3/3] Linking target vad.[K
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ninja -C bin
+ninja: Entering directory `bin'
+ninja: no work to do.
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ninja -C bin
+ninja: Entering directory `bin'
+[0/2] Compiling C object 'vad@exe/src_vad.c.o'.[K[1/2] Compiling C object 'vad@exe/src_vad.c.o'.[K[1/2] Linking target vad.[K[2/2] Linking target vad.[K
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ bin/vad -i pav_4151.wav -o pav_4151.lab[K[K[Kvad
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ cat pav_4151.vad
+0.00000	10.07237	S
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ cat pav_4151.vad[Kscripts/vad_evaluation.pl  [K[K pav_4151.lab
+**************** pav_4151.lab ****************
+Recall V:  0.00/6.94    0.00%   Precision V:  0.00/0.00    0.00%   F-score V (2)  :  0.00%
+Recall S:  3.13/3.13  100.00%   Precision S:  3.13/10.07  31.11%   F-score S (1/2): 36.08%
+===> pav_4151.lab: 0.000%
+
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ scripts/vad_evaluation.pl pav_4151.lab[22Pcat pav_4151.vad[23@bin/vad -i pav_4151.wav -o[C[C[C[C[C[C[C[C[C[C[C[C[Cninja -C bin[K
+ninja: Entering directory `bin'
+[0/3] Compiling C object 'vad@exe/src_main_vad.c.o'.[K[0/3] Compiling C object 'vad@exe/src_vad.c.o'.[K[1/3] Compiling C object 'vad@exe/src_vad.c.o'.[K[2/3] Compiling C object 'vad@exe/src_main_vad.c.o'.[K[2/3] Linking target vad.[K[3/3] Linking target vad.[K
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ninja -C binscripts/vad_evaluation.pl pav_4151.lab[22Pcat pav_4151.vad
+0.00000	10.07237	S
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ cat pav_4151.vad[4Pninja -C binscripts/vad_evaluation.pl pav_4151.lab
+**************** pav_4151.lab ****************
+Recall V:  0.00/6.94    0.00%   Precision V:  0.00/0.00    0.00%   F-score V (2)  :  0.00%
+Recall S:  3.13/3.13  100.00%   Precision S:  3.13/10.07  31.11%   F-score S (1/2): 36.08%
+===> pav_4151.lab: 0.000%
+
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ scripts/vad_evaluation.pl pav_4151.lab[22Pcat pav_4151.vad[4Pninja -C bin
+ninja: Entering directory `bin'
+[0/3] Compiling C object 'vad@exe/src_vad.c.o'.[K[0/3] Compiling C object 'vad@exe/src_pav_analysis.c.o'.[K[1/3] Compiling C object 'vad@exe/src_pav_analysis.c.o'.[K[2/3] Compiling C object 'vad@exe/src_vad.c.o'.[K[2/3] Linking target vad.[K[3/3] Linking target vad.[K
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ninja -C binscripts/vad_evaluation.pl pav_4151.lab[22Pcat pav_4151.vad
+0.00000	10.07237	S
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ cat pav_4151.vad[4Pninja -C bin
+ninja: Entering directory `bin'
+[0/2] Compiling C object 'vad@exe/src_vad.c.o'.[K[1/2] Compiling C object 'vad@exe/src_vad.c.o'.[K[1/2] Linking target vad.[K[2/2] Linking target vad.[K
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ninja -C bincat pav_4151.vad[4Pninja -C bincat pav_4151.vad[4Pninja -C bincat pav_4151.vad[4Pninja -C binscripts/vad_evaluation.pl pav_4151.lab[22Pcat pav_4151.vad[4Pninja -C binscripts/vad_evaluation.pl pav_4151.lab[22Pcat pav_4151.vad[23@bin/vad -i pav_4151.wav -o[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pcat[C[C[C[C[C[C[C[C[C[C[C[C[Cscripts/vad_evaluation.pl pav_4151.lab
+**************** pav_4151.lab ****************
+Recall V:  0.00/6.94    0.00%   Precision V:  0.00/0.00    0.00%   F-score V (2)  :  0.00%
+Recall S:  3.13/3.13  100.00%   Precision S:  3.13/10.07  31.11%   F-score S (1/2): 36.08%
+===> pav_4151.lab: 0.000%
+
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ scripts/vad_evaluation.pl pav_4151.lab[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krun_vad.sh 
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4152.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4161.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4172.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4305.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4311.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4341.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2109.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2110.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2152.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2172.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_1341.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4111.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4112.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41191.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41192.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_412_1.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4132.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4161.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_418.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4311.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4312.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4313.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4321.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4331.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4351.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1121.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1141.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_2151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_1131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4115.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4141.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4161.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4341.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_137.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2121.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2141.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2142.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2191.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_231.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_232.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_233.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2342.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_236.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_237.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_238.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_239.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4111.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4112.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4121.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4122.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4131.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4132.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4141.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4151.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4161.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4171.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4172.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4181.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4182.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4341.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4342.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4351.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4352.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4361.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4362.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4371.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4372.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4382.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4385.wav ****************
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4151.lab ****************
+Recall V:  6.53/6.94   94.09%   Precision V:  6.53/6.86   95.17%   F-score V (2)  : 94.30%
+Recall S:  2.80/3.13   89.43%   Precision S:  2.80/3.21   87.22%   F-score S (1/2): 87.66%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4151.lab: 90.918%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4152.lab ****************
+Recall V: 26.00/28.13  92.44%   Precision V: 26.00/26.80  97.02%   F-score V (2)  : 93.32%
+Recall S:  5.84/6.64   87.97%   Precision S:  5.84/7.97   73.33%   F-score S (1/2): 75.85%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4152.lab: 84.134%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4161.lab ****************
+Recall V:  2.80/3.09   90.54%   Precision V:  2.80/2.90   96.55%   F-score V (2)  : 91.68%
+Recall S:  1.33/1.43   93.00%   Precision S:  1.33/1.62   81.95%   F-score S (1/2): 83.94%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4161.lab: 87.727%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4171.lab ****************
+Recall V:  4.13/5.02   82.18%   Precision V:  4.13/4.13   99.89%   F-score V (2)  : 85.20%
+Recall S:  1.08/1.08   99.58%   Precision S:  1.08/1.98   54.70%   F-score S (1/2): 60.12%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4171.lab: 71.571%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4172.lab ****************
+Recall V:  4.86/5.57   87.25%   Precision V:  4.86/4.86   99.93%   F-score V (2)  : 89.52%
+Recall S:  0.35/0.35   99.02%   Precision S:  0.35/1.06   32.96%   F-score S (1/2): 38.03%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4172.lab: 58.347%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4305.lab ****************
+Recall V:  2.60/3.06   84.84%   Precision V:  2.60/2.60   99.85%   F-score V (2)  : 87.47%
+Recall S:  2.49/2.49   99.84%   Precision S:  2.49/2.95   84.27%   F-score S (1/2): 86.98%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4305.lab: 87.225%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4311.lab ****************
+Recall V: 15.94/18.83  84.65%   Precision V: 15.94/16.46  96.86%   F-score V (2)  : 86.84%
+Recall S:  4.23/4.75   89.10%   Precision S:  4.23/7.12   59.41%   F-score S (1/2): 63.65%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4311.lab: 74.348%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2014/pav_4341.lab ****************
+Recall V:  9.17/10.00  91.70%   Precision V:  9.17/9.99   91.78%   F-score V (2)  : 91.72%
+Recall S:  4.16/4.98   83.51%   Precision S:  4.16/4.99   83.37%   F-score S (1/2): 83.40%
+===> /home/nilllagostera/PAV/P2/db.v4/2014/pav_4341.lab: 87.457%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2109.lab ****************
+Recall V:  1.65/2.32   70.94%   Precision V:  1.65/1.65   99.94%   F-score V (2)  : 75.32%
+Recall S:  1.76/1.76   99.95%   Precision S:  1.76/2.44   72.31%   F-score S (1/2): 76.54%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2109.lab: 75.925%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2110.lab ****************
+Recall V:  2.37/2.81   84.27%   Precision V:  2.37/2.37  100.00%   F-score V (2)  : 87.00%
+Recall S:  1.51/1.51  100.00%   Precision S:  1.51/1.96   77.38%   F-score S (1/2): 81.05%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2110.lab: 83.972%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2151.lab ****************
+Recall V: 12.57/13.22  95.06%   Precision V: 12.57/13.62  92.27%   F-score V (2)  : 94.49%
+Recall S: 13.02/14.07  92.51%   Precision S: 13.02/13.67  95.22%   F-score S (1/2): 94.67%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2151.lab: 94.576%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2152.lab ****************
+Recall V:  6.55/6.94   94.45%   Precision V:  6.55/6.87   95.38%   F-score V (2)  : 94.63%
+Recall S:  6.21/6.52   95.13%   Precision S:  6.21/6.59   94.16%   F-score S (1/2): 94.35%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2152.lab: 94.493%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2171.lab ****************
+Recall V:  2.44/2.57   95.01%   Precision V:  2.44/2.49   97.91%   F-score V (2)  : 95.58%
+Recall S:  1.88/1.94   97.30%   Precision S:  1.88/2.01   93.63%   F-score S (1/2): 94.35%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2171.lab: 94.959%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2015/pav_2172.lab ****************
+Recall V:  2.50/2.70   92.69%   Precision V:  2.50/2.66   93.97%   F-score V (2)  : 92.94%
+Recall S:  5.86/6.02   97.34%   Precision S:  5.86/6.06   96.74%   F-score S (1/2): 96.86%
+===> /home/nilllagostera/PAV/P2/db.v4/2015/pav_2172.lab: 94.880%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_1341.lab ****************
+Recall V:  1.82/2.07   87.92%   Precision V:  1.82/1.86   97.85%   F-score V (2)  : 89.74%
+Recall S:  2.45/2.49   98.39%   Precision S:  2.45/2.70   90.72%   F-score S (1/2): 92.16%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_1341.lab: 90.943%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4111.lab ****************
+Recall V:  4.84/5.63   85.89%   Precision V:  4.84/5.11   94.63%   F-score V (2)  : 87.50%
+Recall S:  4.49/4.76   94.24%   Precision S:  4.49/5.28   84.95%   F-score S (1/2): 86.66%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4111.lab: 87.082%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4112.lab ****************
+Recall V:  2.67/2.95   90.48%   Precision V:  2.67/3.08   86.60%   F-score V (2)  : 89.68%
+Recall S:  6.24/6.65   93.80%   Precision S:  6.24/6.52   95.70%   F-score S (1/2): 95.31%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4112.lab: 92.451%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41191.lab ****************
+Recall V:  2.54/3.04   83.60%   Precision V:  2.54/2.55   99.68%   F-score V (2)  : 86.39%
+Recall S:  3.63/3.64   99.78%   Precision S:  3.63/4.13   87.92%   F-score S (1/2): 90.06%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41191.lab: 88.207%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41192.lab ****************
+Recall V:  2.09/2.37   88.28%   Precision V:  2.09/2.11   99.12%   F-score V (2)  : 90.26%
+Recall S:  6.02/6.04   99.69%   Precision S:  6.02/6.30   95.59%   F-score S (1/2): 96.39%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_41192.lab: 93.271%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_412_1.lab ****************
+Recall V:  2.59/4.22   61.31%   Precision V:  2.59/2.59  100.00%   F-score V (2)  : 66.45%
+Recall S:  2.99/2.99  100.00%   Precision S:  2.99/4.62   64.62%   F-score S (1/2): 69.54%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_412_1.lab: 67.976%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4131.lab ****************
+Recall V:  2.51/3.44   72.87%   Precision V:  2.51/2.57   97.55%   F-score V (2)  : 76.75%
+Recall S:  2.04/2.10   97.01%   Precision S:  2.04/2.98   68.62%   F-score S (1/2): 72.89%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4131.lab: 74.794%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4132.lab ****************
+Recall V:  2.56/3.35   76.33%   Precision V:  2.56/2.57   99.61%   F-score V (2)  : 80.08%
+Recall S:  2.18/2.19   99.54%   Precision S:  2.18/2.98   73.32%   F-score S (1/2): 77.40%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4132.lab: 78.728%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4151.lab ****************
+Recall V:  2.05/2.11   97.11%   Precision V:  2.05/2.27   90.11%   F-score V (2)  : 95.63%
+Recall S:  1.76/1.98   88.67%   Precision S:  1.76/1.82   96.65%   F-score S (1/2): 94.94%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4151.lab: 95.285%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4161.lab ****************
+Recall V:  1.78/2.34   76.01%   Precision V:  1.78/1.84   96.74%   F-score V (2)  : 79.41%
+Recall S:  0.97/1.03   94.16%   Precision S:  0.97/1.53   63.25%   F-score S (1/2): 67.70%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4161.lab: 73.322%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_418.lab ****************
+Recall V:  2.52/3.10   81.41%   Precision V:  2.52/2.59   97.30%   F-score V (2)  : 84.16%
+Recall S:  4.75/4.82   98.55%   Precision S:  4.75/5.32   89.19%   F-score S (1/2): 90.92%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_418.lab: 87.472%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4311.lab ****************
+Recall V:  1.55/1.68   92.11%   Precision V:  1.55/1.69   91.59%   F-score V (2)  : 92.01%
+Recall S:  2.64/2.78   94.89%   Precision S:  2.64/2.77   95.22%   F-score S (1/2): 95.15%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4311.lab: 93.567%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4312.lab ****************
+Recall V:  2.87/3.11   92.30%   Precision V:  2.87/2.93   98.12%   F-score V (2)  : 93.40%
+Recall S:  1.66/1.72   96.80%   Precision S:  1.66/1.90   87.40%   F-score S (1/2): 89.13%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4312.lab: 91.242%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4313.lab ****************
+Recall V:  1.68/1.92   87.61%   Precision V:  1.68/1.77   94.92%   F-score V (2)  : 88.98%
+Recall S:  1.85/1.94   95.35%   Precision S:  1.85/2.08   88.61%   F-score S (1/2): 89.88%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4313.lab: 89.430%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4321.lab ****************
+Recall V:  3.73/4.59   81.22%   Precision V:  3.73/4.04   92.38%   F-score V (2)  : 83.23%
+Recall S:  5.21/5.52   94.42%   Precision S:  5.21/6.07   85.80%   F-score S (1/2): 87.39%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4321.lab: 85.286%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4331.lab ****************
+Recall V:  4.66/5.78   80.72%   Precision V:  4.66/4.68   99.67%   F-score V (2)  : 83.91%
+Recall S:  3.21/3.23   99.53%   Precision S:  3.21/4.33   74.25%   F-score S (1/2): 78.22%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4331.lab: 81.015%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4351.lab ****************
+Recall V:  3.16/3.42   92.41%   Precision V:  3.16/3.26   97.08%   F-score V (2)  : 93.31%
+Recall S:  4.11/4.20   97.74%   Precision S:  4.11/4.37   94.04%   F-score S (1/2): 94.76%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q1/pav_4351.lab: 94.030%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1121.lab ****************
+Recall V:  7.00/8.47   82.68%   Precision V:  7.00/7.87   89.01%   F-score V (2)  : 83.87%
+Recall S:  3.08/3.94   78.06%   Precision S:  3.08/4.55   67.71%   F-score S (1/2): 69.56%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1121.lab: 76.381%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1131.lab ****************
+Recall V:  3.13/3.49   89.55%   Precision V:  3.13/3.15   99.29%   F-score V (2)  : 91.34%
+Recall S:  1.97/2.00   98.87%   Precision S:  1.97/2.34   84.39%   F-score S (1/2): 86.93%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1131.lab: 89.110%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1141.lab ****************
+Recall V:  2.77/3.97   69.73%   Precision V:  2.77/2.77  100.00%   F-score V (2)  : 74.22%
+Recall S:  3.61/3.61  100.00%   Precision S:  3.61/4.81   75.01%   F-score S (1/2): 78.95%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1141.lab: 76.552%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1171.lab ****************
+Recall V: 10.99/12.61  87.16%   Precision V: 10.99/11.14  98.68%   F-score V (2)  : 89.24%
+Recall S:  8.63/8.78   98.32%   Precision S:  8.63/10.25  84.20%   F-score S (1/2): 86.69%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_1171.lab: 87.954%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_2151.lab ****************
+Recall V:  5.27/5.32   99.06%   Precision V:  5.27/5.57   94.62%   F-score V (2)  : 98.14%
+Recall S:  1.74/2.04   85.28%   Precision S:  1.74/1.79   97.21%   F-score S (1/2): 94.56%
+===> /home/nilllagostera/PAV/P2/db.v4/201617q2/pav_2151.lab: 96.334%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_1131.lab ****************
+Recall V:  6.01/7.38   81.43%   Precision V:  6.01/6.02   99.79%   F-score V (2)  : 84.54%
+Recall S:  4.03/4.04   99.69%   Precision S:  4.03/5.40   74.64%   F-score S (1/2): 78.59%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_1131.lab: 81.511%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4115.lab ****************
+Recall V:  1.42/1.42  100.00%   Precision V:  1.42/1.75   81.14%   F-score V (2)  : 95.56%
+Recall S:  0.65/0.98   66.28%   Precision S:  0.65/0.65  100.00%   F-score S (1/2): 90.76%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4115.lab: 93.130%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4131.lab ****************
+Recall V: 10.70/11.49  93.12%   Precision V: 10.70/11.17  95.81%   F-score V (2)  : 93.65%
+Recall S:  5.76/6.23   92.49%   Precision S:  5.76/6.55   87.93%   F-score S (1/2): 88.81%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4131.lab: 91.196%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4141.lab ****************
+Recall V:  3.53/4.68   75.46%   Precision V:  3.53/3.66   96.50%   F-score V (2)  : 78.90%
+Recall S:  2.17/2.30   94.43%   Precision S:  2.17/3.32   65.43%   F-score S (1/2): 69.71%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4141.lab: 74.163%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4161.lab ****************
+Recall V:  2.07/2.17   95.39%   Precision V:  2.07/2.12   97.64%   F-score V (2)  : 95.83%
+Recall S:  1.88/1.93   97.41%   Precision S:  1.88/1.98   94.94%   F-score S (1/2): 95.43%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4161.lab: 95.629%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4171.lab ****************
+Recall V:  5.58/6.06   92.14%   Precision V:  5.58/5.59   99.82%   F-score V (2)  : 93.58%
+Recall S:  5.22/5.23   99.81%   Precision S:  5.22/5.70   91.65%   F-score S (1/2): 93.17%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4171.lab: 93.376%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4341.lab ****************
+Recall V:  5.27/5.30   99.42%   Precision V:  5.27/5.55   94.89%   F-score V (2)  : 98.48%
+Recall S:  3.68/3.96   92.85%   Precision S:  3.68/3.71   99.18%   F-score S (1/2): 97.84%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q1/pav_4341.lab: 98.164%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_137.lab ****************
+Recall V:  1.95/2.66   73.45%   Precision V:  1.95/1.95  100.00%   F-score V (2)  : 77.57%
+Recall S:  1.53/1.53  100.00%   Precision S:  1.53/2.23   68.44%   F-score S (1/2): 73.05%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_137.lab: 75.273%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2121.lab ****************
+Recall V:  3.39/4.42   76.73%   Precision V:  3.39/3.41   99.36%   F-score V (2)  : 80.39%
+Recall S:  3.70/3.72   99.41%   Precision S:  3.70/4.72   78.25%   F-score S (1/2): 81.73%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2121.lab: 81.059%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2141.lab ****************
+Recall V:  3.56/3.99   89.17%   Precision V:  3.56/3.60   98.89%   F-score V (2)  : 90.96%
+Recall S:  1.91/1.95   97.95%   Precision S:  1.91/2.34   81.53%   F-score S (1/2): 84.35%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2141.lab: 87.593%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2142.lab ****************
+Recall V:  2.50/3.58   69.71%   Precision V:  2.50/2.53   98.72%   F-score V (2)  : 74.07%
+Recall S:  1.21/1.25   97.39%   Precision S:  1.21/2.30   52.82%   F-score S (1/2): 58.14%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2142.lab: 65.621%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2171.lab ****************
+Recall V:  3.29/3.67   89.59%   Precision V:  3.29/3.71   88.63%   F-score V (2)  : 89.39%
+Recall S:  6.32/6.74   93.74%   Precision S:  6.32/6.70   94.30%   F-score S (1/2): 94.18%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2171.lab: 91.758%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2191.lab ****************
+Recall V:  3.62/4.11   88.19%   Precision V:  3.62/3.62  100.00%   F-score V (2)  : 90.32%
+Recall S:  2.92/2.92  100.00%   Precision S:  2.92/3.40   85.74%   F-score S (1/2): 88.26%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2191.lab: 89.283%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_231.lab ****************
+Recall V:  4.47/4.97   89.98%   Precision V:  4.47/5.35   83.58%   F-score V (2)  : 88.63%
+Recall S:  4.27/5.15   82.95%   Precision S:  4.27/4.77   89.57%   F-score S (1/2): 88.16%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_231.lab: 88.392%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_232.lab ****************
+Recall V:  2.82/2.95   95.68%   Precision V:  2.82/3.15   89.60%   F-score V (2)  : 94.40%
+Recall S:  2.05/2.38   86.23%   Precision S:  2.05/2.18   94.15%   F-score S (1/2): 92.45%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_232.lab: 93.420%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_233.lab ****************
+Recall V:  3.02/3.46   87.29%   Precision V:  3.02/3.10   97.43%   F-score V (2)  : 89.15%
+Recall S:  2.99/3.07   97.41%   Precision S:  2.99/3.43   87.19%   F-score S (1/2): 89.06%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_233.lab: 89.105%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2342.lab ****************
+Recall V:  1.98/2.39   82.68%   Precision V:  1.98/1.98  100.00%   F-score V (2)  : 85.65%
+Recall S:  1.94/1.94  100.00%   Precision S:  1.94/2.36   82.39%   F-score S (1/2): 85.40%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_2342.lab: 85.523%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_236.lab ****************
+Recall V:  2.29/3.36   68.10%   Precision V:  2.29/2.29  100.00%   F-score V (2)  : 72.74%
+Recall S:  1.71/1.71  100.00%   Precision S:  1.71/2.79   61.52%   F-score S (1/2): 66.65%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_236.lab: 69.632%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_237.lab ****************
+Recall V:  4.71/5.32   88.46%   Precision V:  4.71/4.92   95.66%   F-score V (2)  : 89.81%
+Recall S:  2.53/2.75   92.22%   Precision S:  2.53/3.15   80.48%   F-score S (1/2): 82.58%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_237.lab: 86.122%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_238.lab ****************
+Recall V:  3.20/4.56   70.23%   Precision V:  3.20/3.22   99.46%   F-score V (2)  : 74.62%
+Recall S:  2.73/2.75   99.36%   Precision S:  2.73/4.09   66.79%   F-score S (1/2): 71.48%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_238.lab: 73.029%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_239.lab ****************
+Recall V:  4.42/5.71   77.28%   Precision V:  4.42/4.42   99.89%   F-score V (2)  : 80.95%
+Recall S:  2.66/2.66   99.82%   Precision S:  2.66/3.96   67.19%   F-score S (1/2): 71.89%
+===> /home/nilllagostera/PAV/P2/db.v4/2017-18q2/pav_239.lab: 76.284%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4111.lab ****************
+Recall V:  2.38/2.92   81.62%   Precision V:  2.38/2.39   99.77%   F-score V (2)  : 84.70%
+Recall S:  3.63/3.63   99.85%   Precision S:  3.63/4.16   87.10%   F-score S (1/2): 89.38%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4111.lab: 87.009%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4112.lab ****************
+Recall V:  0.77/1.29   59.71%   Precision V:  0.77/0.78   99.08%   F-score V (2)  : 64.87%
+Recall S:  1.90/1.90   99.62%   Precision S:  1.90/2.42   78.44%   F-score S (1/2): 81.92%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4112.lab: 72.896%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4121.lab ****************
+Recall V:  2.94/2.99   98.33%   Precision V:  2.94/3.04   96.74%   F-score V (2)  : 98.01%
+Recall S:  3.05/3.15   96.85%   Precision S:  3.05/3.10   98.39%   F-score S (1/2): 98.08%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4121.lab: 98.042%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4122.lab ****************
+Recall V:  1.08/1.26   86.05%   Precision V:  1.08/1.09   99.08%   F-score V (2)  : 88.38%
+Recall S:  1.26/1.27   99.22%   Precision S:  1.26/1.44   87.84%   F-score S (1/2): 89.90%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4122.lab: 89.136%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4131.lab ****************
+Recall V: 10.92/13.83  79.01%   Precision V: 10.92/10.95  99.75%   F-score V (2)  : 82.44%
+Recall S:  3.29/3.31   99.18%   Precision S:  3.29/6.19   53.10%   F-score S (1/2): 58.54%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4131.lab: 69.468%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4132.lab ****************
+Recall V:  8.63/10.60  81.40%   Precision V:  8.63/8.64   99.91%   F-score V (2)  : 84.53%
+Recall S:  1.83/1.84   99.57%   Precision S:  1.83/3.81   48.19%   F-score S (1/2): 53.74%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4132.lab: 67.398%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4141.lab ****************
+Recall V:  2.88/2.94   97.77%   Precision V:  2.88/2.89   99.52%   F-score V (2)  : 98.12%
+Recall S:  0.76/0.77   98.20%   Precision S:  0.76/0.83   92.07%   F-score S (1/2): 93.23%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4141.lab: 95.644%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4151.lab ****************
+Recall V:  1.50/1.85   81.16%   Precision V:  1.50/1.50   99.85%   F-score V (2)  : 84.32%
+Recall S:  1.05/1.05   99.78%   Precision S:  1.05/1.40   75.17%   F-score S (1/2): 79.07%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4151.lab: 81.655%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4161.lab ****************
+Recall V:  2.67/3.37   79.26%   Precision V:  2.67/2.67  100.00%   F-score V (2)  : 82.69%
+Recall S:  1.76/1.76  100.00%   Precision S:  1.76/2.46   71.58%   F-score S (1/2): 75.90%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4161.lab: 79.223%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4171.lab ****************
+Recall V:  3.18/3.78   84.20%   Precision V:  3.18/3.19   99.72%   F-score V (2)  : 86.90%
+Recall S:  2.49/2.50   99.65%   Precision S:  2.49/3.09   80.69%   F-score S (1/2): 83.88%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4171.lab: 85.378%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4172.lab ****************
+Recall V:  1.26/3.00   42.01%   Precision V:  1.26/1.26  100.00%   F-score V (2)  : 47.52%
+Recall S:  2.27/2.27  100.00%   Precision S:  2.27/4.01   56.61%   F-score S (1/2): 61.99%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4172.lab: 54.275%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4181.lab ****************
+Recall V:  2.65/2.85   92.74%   Precision V:  2.65/2.71   97.65%   F-score V (2)  : 93.68%
+Recall S:  4.11/4.18   98.48%   Precision S:  4.11/4.32   95.20%   F-score S (1/2): 95.84%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4181.lab: 94.754%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4182.lab ****************
+Recall V:  3.35/3.64   91.96%   Precision V:  3.35/3.64   91.91%   F-s

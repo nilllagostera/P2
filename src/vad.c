@@ -33,6 +33,7 @@ typedef struct {
  */
 
 Features compute_features(const float *x, int N) {
+
   /*
    * Input: x[i] : i=0 .... N-1 
    * Ouput: computed features
@@ -45,9 +46,15 @@ Features compute_features(const float *x, int N) {
   Features feat;
   //feat.zcr = feat.p = feat.am = (float) rand()/RAND_MAX;
   feat.zcr = compute_zcr(x,N,16000);
+<<<<<<< HEAD
   feat.am=compute_am(x,N);
   feat.p=compute_pow(x,N);
+=======
+  feat.am = compute_am(x,N);
+  feat.p = compute_power(x,N);
+>>>>>>> 1dc67c3a89836236962de28b428fd6bef478a440
   return feat;
+  //Nos da un número aleatorio
 }
 
 /* 
@@ -82,7 +89,7 @@ unsigned int vad_frame_size(VAD_DATA *vad_data) {
  */
 
 VAD_STATE vad(VAD_DATA *vad_data, float *x) {
-
+  //Esta funcion se llama una vez por trama. Tiene dos argumentos: la data (nos informa del estado) y un vector de reales.
   /* 
    * TODO: You can change this, using your own features,
    * program finite state automaton, define conditions, etc.
@@ -92,15 +99,23 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
   Features f = compute_features(x, vad_data->frame_length);
   vad_data->last_feature = f.p; /* save feature, in case you want to show */
 
-  switch (vad_data->state) {
+  switch (vad_data->state) { //este es el automata
   case ST_INIT:
     vad_data->state = ST_SILENCE;
     vad_data->p1 = f.p + 10;
+<<<<<<< HEAD
     //nuestro umbral es el 10 (random)
     break;
 
   case ST_SILENCE:
     if (f.p > vad_data->p1)
+=======
+    //Umbral 10 (random)
+    break;
+
+  case ST_SILENCE:
+    if (f.p > vad_data->p1) //feature potencia
+>>>>>>> 1dc67c3a89836236962de28b428fd6bef478a440
       vad_data->state = ST_VOICE;
     break;
 
