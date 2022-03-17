@@ -14,7 +14,7 @@ const float FRAME_TIME = 10.0F; /* in ms. */
  */
 
 const char *state_str[] = {
-  "UNDEF", "S", "V", "INIT"
+  "UNDEF", "S", "V", "INIT", "MV", "MS"
 };
 
 const char *state2str(VAD_STATE st) {
@@ -46,13 +46,8 @@ Features compute_features(const float *x, int N) {
   Features feat;
   //feat.zcr = feat.p = feat.am = (float) rand()/RAND_MAX;
   feat.zcr = compute_zcr(x,N,16000);
-<<<<<<< HEAD
-  feat.am=compute_am(x,N);
-  feat.p=compute_pow(x,N);
-=======
   feat.am = compute_am(x,N);
   feat.p = compute_power(x,N);
->>>>>>> 1dc67c3a89836236962de28b428fd6bef478a440
   return feat;
   //Nos da un número aleatorio
 }
@@ -61,11 +56,16 @@ Features compute_features(const float *x, int N) {
  * TODO: Init the values of vad_data
  */
 
-VAD_DATA * vad_open(float rate) {
+VAD_DATA * vad_open(float rate, float alpha1) {
   VAD_DATA *vad_data = malloc(sizeof(VAD_DATA));
   vad_data->state = ST_INIT;
   vad_data->sampling_rate = rate;
   vad_data->frame_length = rate * FRAME_TIME * 1e-3;
+  vad_data->alpha1 = alpha1;
+  vad_data->n=0;
+  vad_data->p=0;
+  vad_data->timer=0;
+  vad_data->count=0;
   return vad_data;
 }
 
@@ -73,6 +73,7 @@ VAD_STATE vad_close(VAD_DATA *vad_data) {
   /* 
    * TODO: decide what to do with the last undecided frames
    */
+
   VAD_STATE state = vad_data->state;
 
   free(vad_data);
@@ -101,27 +102,68 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
 
   switch (vad_data->state) { //este es el automata
   case ST_INIT:
-    vad_data->state = ST_SILENCE;
-    vad_data->p1 = f.p + 10;
-<<<<<<< HEAD
-    //nuestro umbral es el 10 (random)
+    //vad_data->state = ST_SILENCE;
+    vad_data->count++;
+    if( vad_data->n <100){ //100 ES EL NUMERO DE TRAMAS QUE COJEMOS COMO SILENCIO INICIAL
+      vad_data->p=vad_data->p+f.p;
+      vad_data->n++;
+     // printf("%d  %f\n",vad_data->n,vad_data->p);
+    }else{
+      vad_data->state=ST_SILENCE;
+      vad_data->k0=vad_data->p/100;
+      printf("k0=%f\n",vad_data->k0);
+      vad_data->k1 = vad_data->k0 + vad_data->alpha1;
+      printf("k1=%f\n",vad_data->k1);
+      vad_data->k2 = vad_data->k1 + 10;
+      printf("k2=%f\n",vad_data->k2);
+    }
+
     break;
 
   case ST_SILENCE:
-    if (f.p > vad_data->p1)
-=======
-    //Umbral 10 (random)
-    break;
-
-  case ST_SILENCE:
-    if (f.p > vad_data->p1) //feature potencia
->>>>>>> 1dc67c3a89836236962de28b428fd6bef478a440
-      vad_data->state = ST_VOICE;
+    if (f.p > vad_data->k1 && f.p < vad_data->k2){ //feature potencia
+      vad_data->state = ST_MV;
+      vad_data->count = 0;
+    }else{
+      vad_data->count++;
+    }
     break;
 
   case ST_VOICE:
-    if (f.p < vad_data->p1)
+    if (f.p > vad_data->k0 && f.p <vad_data->k1){
+      vad_data->state = ST_MS;
+      vad_data->count = 0;
+    }else{
+      vad_data->count++;
+    }
+    break;
+
+  case ST_MV:
+    vad_data->timer = vad_data->timer + FRAME_TIME;
+    if (f.p < vad_data->k0 && vad_data->timer > MINIMUM_TIME_SILENCE) {
       vad_data->state = ST_SILENCE;
+      vad_data->timer = 0;
+    }
+     else if (f.p > vad_data->k2 && vad_data->timer > MINIMUM_TIME_VOICE) {
+      vad_data->state = ST_VOICE;
+      vad_data->timer = 0;
+    }
+    else
+      vad_data->count++;
+    break;
+
+  case ST_MS:
+    vad_data->timer = vad_data->timer + FRAME_TIME;
+    if (f.p < vad_data->k0 && vad_data->timer > MINIMUM_TIME_SILENCE) {
+      vad_data->state = ST_SILENCE;
+      vad_data->timer = 0;
+    }
+    else if (f.p > vad_data->k2 && vad_data->timer > MINIMUM_TIME_VOICE) {
+      vad_data->state = ST_VOICE;
+      vad_data->timer = 0;
+    }
+    else
+      vad_data->count++;
     break;
 
   case ST_UNDEF:
@@ -129,10 +171,11 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
   }
 
   if (vad_data->state == ST_SILENCE ||
-      vad_data->state == ST_VOICE)
+      vad_data->state == ST_VOICE|| vad_data->state == ST_MS || vad_data->state==ST_MV)
     return vad_data->state;
   else
-    return ST_UNDEF;
+   return ST_UNDEF;
+ //  return ST_SILENCE; 
 }
 
 void vad_show_state(const VAD_DATA *vad_data, FILE *out) {
