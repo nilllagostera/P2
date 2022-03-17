@@ -47,8 +47,8 @@ Features compute_features(const float *x, int N) {
   Features feat;
   //feat.zcr = feat.p = feat.am = (float) rand()/RAND_MAX;
   feat.zcr = compute_zcr(x,N,16000);
-  feat.am = compute_am(x,N);
-  feat.p = compute_power(x,N);
+  feat.am=compute_am(x,N);
+  feat.p=compute_power(x,N);
   return feat;
   //Nos da un número aleatorio
 }
@@ -95,6 +95,7 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
   /* 
    * TODO: You can change this, using your own features,
    * program finite state automaton, define conditions, etc.
+   * tiene dos argumentos : vad_data --> nos informa del estado y c --> señal
    */
 
   Features f = compute_features(x, vad_data->frame_length);
