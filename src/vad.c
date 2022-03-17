@@ -6,6 +6,7 @@
 #include "vad.h"
 
 const float FRAME_TIME = 10.0F; /* in ms. */
+const int N_TRAMAS = 9; //Numero de tramas que cogemos.
 
 /* 
  * As the output state is only ST_VOICE, ST_SILENCE, or ST_UNDEF,
@@ -14,7 +15,7 @@ const float FRAME_TIME = 10.0F; /* in ms. */
  */
 
 const char *state_str[] = {
-  "UNDEF", "S", "V", "INIT"
+  "UNDEF", "S", "V", "INIT", "MV", "MS"
 };
 
 const char *state2str(VAD_STATE st) {
@@ -56,11 +57,17 @@ Features compute_features(const float *x, int N) {
  * TODO: Init the values of vad_data
  */
 
-VAD_DATA * vad_open(float rate) {
+VAD_DATA * vad_open(float rate, float alpha1, float alpha2) {
   VAD_DATA *vad_data = malloc(sizeof(VAD_DATA));
   vad_data->state = ST_INIT;
   vad_data->sampling_rate = rate;
   vad_data->frame_length = rate * FRAME_TIME * 1e-3;
+  vad_data->alpha1 = alpha1;
+  vad_data->alpha2 = alpha2;
+  vad_data->n=0;
+  vad_data->p=0;
+  vad_data->timer=0;
+  vad_data->count=0;
   return vad_data;
 }
 
@@ -95,19 +102,68 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
 
   switch (vad_data->state) { //este es el automata
   case ST_INIT:
-    vad_data->state = ST_SILENCE;
-    vad_data->p1 = f.p + 10;
-    //Umbral 10 (random)
+    //vad_data->state = ST_SILENCE;
+    vad_data->count++;
+    if( vad_data->n <N_TRAMAS){ //100 ES EL NUMERO DE TRAMAS QUE COJEMOS COMO SILENCIO INICIAL
+      vad_data->p=vad_data->p+f.p;
+      vad_data->n++;
+     // printf("%d  %f\n",vad_data->n,vad_data->p);
+    }else{
+      vad_data->state=ST_SILENCE;
+      vad_data->k0=vad_data->p/N_TRAMAS;
+      printf("k0=%f\n",vad_data->k0);
+      vad_data->k1 = vad_data->k0 + vad_data->alpha1;
+      printf("k1=%f\n",vad_data->k1);
+      vad_data->k2 = vad_data->k1 + vad_data->alpha2;
+      printf("k2=%f\n",vad_data->k2);
+    }
+
     break;
 
   case ST_SILENCE:
-    if (f.p > vad_data->p1) //feature potencia
-      vad_data->state = ST_VOICE;
+    if (f.p > vad_data->k1 && f.p < vad_data->k2){ //feature potencia
+      vad_data->state = ST_MV;
+      vad_data->count = 0;
+    }else{
+      vad_data->count++;
+    }
     break;
 
   case ST_VOICE:
-    if (f.p < vad_data->p1)
+    if (f.p > vad_data->k0 && f.p <vad_data->k1){
+      vad_data->state = ST_MS;
+      vad_data->count = 0;
+    }else{
+      vad_data->count++;
+    }
+    break;
+
+  case ST_MV:
+    vad_data->timer = vad_data->timer + FRAME_TIME;
+    if (f.p < vad_data->k0 && vad_data->timer > MINIMUM_TIME_SILENCE) {
       vad_data->state = ST_SILENCE;
+      vad_data->timer = 0;
+    }
+     else if (f.p > vad_data->k2 && vad_data->timer > MINIMUM_TIME_VOICE) {
+      vad_data->state = ST_VOICE;
+      vad_data->timer = 0;
+    }
+    else
+      vad_data->count++;
+    break;
+
+  case ST_MS:
+    vad_data->timer = vad_data->timer + FRAME_TIME;
+    if (f.p < vad_data->k0 && vad_data->timer > MINIMUM_TIME_SILENCE) {
+      vad_data->state = ST_SILENCE;
+      vad_data->timer = 0;
+    }
+    else if (f.p > vad_data->k2 && vad_data->timer > MINIMUM_TIME_VOICE) {
+      vad_data->state = ST_VOICE;
+      vad_data->timer = 0;
+    }
+    else
+      vad_data->count++;
     break;
 
   case ST_UNDEF:

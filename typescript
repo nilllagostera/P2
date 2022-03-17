@@ -1014,4 +1014,106 @@ Recall S:  4.11/4.18   98.48%   Precision S:  4.11/4.32   95.20%   F-score S (1/
 ===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4181.lab: 94.754%
 
 **************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4182.lab ****************
-Recall V:  3.35/3.64   91.96%   Precision V:  3.35/3.64   91.91%   F-s
+Recall V:  3.35/3.64   91.96%   Precision V:  3.35/3.64   91.91%   F-score V (2)  : 91.95%
+Recall S:  5.27/5.57   94.71%   Precision S:  5.27/5.56   94.74%   F-score S (1/2): 94.74%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4182.lab: 93.333%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4341.lab ****************
+Recall V:  3.42/4.47   76.55%   Precision V:  3.42/3.42  100.00%   F-score V (2)  : 80.32%
+Recall S:  4.32/4.32  100.00%   Precision S:  4.32/5.37   80.50%   F-score S (1/2): 83.77%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4341.lab: 82.024%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4342.lab ****************
+Recall V:  2.00/4.30   46.48%   Precision V:  2.00/2.00  100.00%   F-score V (2)  : 52.05%
+Recall S:  4.18/4.18  100.00%   Precision S:  4.18/6.49   64.51%   F-score S (1/2): 69.44%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4342.lab: 60.120%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4351.lab ****************
+Recall V:  2.13/3.02   70.38%   Precision V:  2.13/2.13   99.91%   F-score V (2)  : 74.80%
+Recall S:  2.75/2.75   99.93%   Precision S:  2.75/3.64   75.42%   F-score S (1/2): 79.31%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4351.lab: 77.022%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4352.lab ****************
+Recall V:  3.70/4.08   90.75%   Precision V:  3.70/3.78   97.87%   F-score V (2)  : 92.09%
+Recall S:  1.74/1.82   95.57%   Precision S:  1.74/2.12   82.16%   F-score S (1/2): 84.53%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4352.lab: 88.230%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4361.lab ****************
+Recall V:  1.61/1.64   98.32%   Precision V:  1.61/1.72   93.67%   F-score V (2)  : 97.36%
+Recall S:  3.16/3.27   96.67%   Precision S:  3.16/3.19   99.14%   F-score S (1/2): 98.63%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4361.lab: 97.993%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4362.lab ****************
+Recall V:  2.42/2.70   89.49%   Precision V:  2.42/2.45   98.73%   F-score V (2)  : 91.20%
+Recall S:  1.86/1.89   98.36%   Precision S:  1.86/2.15   86.77%   F-score S (1/2): 88.86%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4362.lab: 90.022%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4371.lab ****************
+Recall V:  1.64/1.85   88.75%   Precision V:  1.64/1.65   99.58%   F-score V (2)  : 90.72%
+Recall S:  3.36/3.36   99.80%   Precision S:  3.36/3.56   94.16%   F-score S (1/2): 95.23%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4371.lab: 92.951%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4372.lab ****************
+Recall V:  1.95/2.07   94.04%   Precision V:  1.95/2.00   97.37%   F-score V (2)  : 94.69%
+Recall S:  3.30/3.36   98.43%   Precision S:  3.30/3.43   96.40%   F-score S (1/2): 96.80%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4372.lab: 95.736%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4382.lab ****************
+Recall V:  5.90/7.21   81.85%   Precision V:  5.90/6.46   91.36%   F-score V (2)  : 83.59%
+Recall S:  8.30/8.85   93.70%   Precision S:  8.30/9.60   86.37%   F-score S (1/2): 87.74%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4382.lab: 85.640%
+
+**************** /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4385.lab ****************
+Recall V:  2.39/3.24   73.83%   Precision V:  2.39/2.40   99.72%   F-score V (2)  : 77.87%
+Recall S:  3.66/3.67   99.82%   Precision S:  3.66/4.51   81.19%   F-score S (1/2): 84.34%
+===> /home/nilllagostera/PAV/P2/db.v4/2018-19q1/pav_4385.lab: 81.042%
+
+**************** Summary ****************
+Recall V:326.04/382.74 85.19%   Precision V:326.04/338.14 96.42%   F-score V (2)  : 87.22%
+Recall S:258.92/271.01 95.54%   Precision S:258.92/315.62 82.04%   F-score S (1/2): 84.42%
+===> TOTAL: 85.810%
+
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ git+[Kadd[K[K[K add .
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ git commit -m ""[K[K''c'o'd'i'g'o' 'm'o'd'i'f'i'c'a'd'o' 'a'u'l'a'
+[Llagostera-Aymerich 1dc67c3] codigo modificado aula
+ 8 files changed, 2011 insertions(+), 5 deletions(-)
+ create mode 100644 meson.build
+ create mode 100644 pav_4151.pow
+ create mode 100644 pav_4151.vad
+ create mode 100644 src/pav_analysis.c
+ create mode 100644 src/pav_analysis.h
+ create mode 100644 typescript
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ git push
+Username for 'https://github.com': nilllagostera
+Password for 'https://nilllagostera@github.com': 
+Enumerating objects: 15, done.
+Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects:  10% (1/10)Compressing objects:  20% (2/10)Compressing objects:  30% (3/10)Compressing objects:  40% (4/10)Compressing objects:  50% (5/10)Compressing objects:  60% (6/10)Compressing objects:  70% (7/10)Compressing objects:  80% (8/10)Compressing objects:  90% (9/10)Compressing objects: 100% (10/10)Compressing objects: 100% (10/10), done.
+Writing objects:   9% (1/11)Writing objects:  18% (2/11)Writing objects:  27% (3/11)Writing objects:  36% (4/11)Writing objects:  45% (5/11)Writing objects:  54% (6/11)Writing objects:  63% (7/11)Writing objects:  72% (8/11)Writing objects:  81% (9/11)Writing objects:  90% (10/11)Writing objects: 100% (11/11)Writing objects: 100% (11/11), 18.34 KiB | 3.67 MiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/nilllagostera/P2.git
+   7a78090..1dc67c3  Llagostera-Aymerich -> Llagostera-Aymerich
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ 2[Kgit pushcommit -m 'codigo modificado aula'add .[Kscripts/run_vad.sh vad_evaluation.pl pav_4151.labninja -C bin[Kscripts/vad_evaluation.pl pav_4151.lab
+**************** pav_4151.lab ****************
+Recall V:  0.00/6.94    0.00%   Precision V:  0.00/0.00    0.00%   F-score V (2)  :  0.00%
+Recall S:  3.13/3.13  100.00%   Precision S:  3.13/10.07  31.11%   F-score S (1/2): 36.08%
+===> pav_4151.lab: 0.000%
+
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ scripts/vad_evaluation.pl pav_4151.labgit push[Kcommit -m 'codigo modificado aula'add .[Kscripts/run_vad.sh vad_evaluation.pl pav_4151.lab[19Prun_vad.sh vad_evaluation.pl pav_4151.labninja -C bin[K
+ninja: Entering directory `bin'
+ninja: no work to do.
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ ninja -C binscripts/vad_evaluation.pl pav_4151.labgit push[Kcommit -m 'codigo modificado aula'add .[Kscripts/run_vad.sh vad_evaluation.pl pav_4151.labninja -C bin[Kcat pav_4151.vad[4Pninja -C binscripts/vad_evaluation.pl pav_4151.lab[22Pcat pav_4151.vad[4Pninja -C binscripts/vad_evaluation.pl pav_4151.lab[22Pcat pav_4151.vad[23@bin/vad -i pav_4151.wav -o[C[C[C[C[C[C[C[C[C[C[C[C[Cninja -C bin[Kcp ../P1/pav_analysis.[ch] src[14Ppadre del actual.[Kwhich lsecho $PATHls[K../P1/p1scripts/run_vad.sh [6Pls db.v4/2014[Kscripts/vad_evaluation.pl  pav_4151.lab[Kcd ..[K[3Plscd scripts/[3Pscripts/ls[Kp1 tarea1.wav tarea11.txt^C
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ bin/vad -i[K[K[K[K[K[K[K[K[K[Kninja -C binscripts/vad_evaluation.pl pav_4151.labgit push[Kcommit -m 'codigo modificado aula'add .[Kscripts/run_vad.sh vad_evaluation.pl pav_4151.labninja -C bin[Kcat pav_4151.vad[4Pninja -C bincat pav_4151.vad[4Pninja -C binscripts/vad_evaluation.pl pav_4151.lab[19Prun_vad.sh ^C
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ bin/vad -i pav_4151.wav -o pav_4151.lab[K[K[Kvad
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ bin/vad -i pav_4151.wav -o pav_4151.vadninja -C bin[Kscripts/vad_evaluation.pl pav_4151.labgit push[Kcommit -m 'codigo modificado aula'add .[Kscripts/run_vad.sh vad_evaluation.pl pav_4151.lab[19Prun_vad.sh [10Pgit add .^C
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ bin/vad -i pav_4151.wav -o pav_4151.vadninja -C bin[Kscripts/vad_evaluation.pl pav_4151.labgit push[Kcommit -m 'codigo modificado aula'add .[Kscripts/run_vad.sh [10Pgit add .commit -m 'codigo modificado aula'push[Kscripts/vad_evaluation.pl pav_4151.labninja -C bin[Kbin/vad -i pav_4151.wav -o pav_4151.vad[K^C
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ bin/vad -i pav_4151.wav -o pav_4151.vadninja -C bin[Kscripts/vad_evaluation.pl pav_4151.labgit push[Kscripts/vad_evaluation.pl pav_4151.lab
+**************** pav_4151.lab ****************
+Recall V:  6.53/6.94   94.09%   Precision V:  6.53/6.86   95.17%   F-score V (2)  : 94.30%
+Recall S:  2.80/3.13   89.43%   Precision S:  2.80/3.21   87.22%   F-score S (1/2): 87.66%
+===> pav_4151.lab: 90.918%
+
+]0;nilllagostera@LAPTOP-6JJKLVF3: ~/PAV/P2[01;32mnilllagostera@LAPTOP-6JJKLVF3[00m:[01;34m~/PAV/P2[00m$ scriptts/ru[K[K[K[K[Ks/run_vad.sh 
+Script done on 2022-03-08 14:30:04+01:00 [COMMAND_EXIT_CODE="0"]
