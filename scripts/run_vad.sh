@@ -1,11 +1,11 @@
-#!/bin/bash
-if [ $# -ne 1 ]; then 
-    echo "usage: $0 alpha1"
-    exit -1
+if [[ $# -ge 2 ]];
+then
+    ALPHA1=$1
+    ALPHA2=$2
+else
+    ALPHA1=1
+    ALPHA2=10
 fi
-alpha1=$1
-# Be sure that this file has execution permissions:
-# Use the nautilus explorer or chmod +x run_vad.sh
 
 # Write here the name and path of your program and database
 DIR_P2=$HOME/PAV/P2
@@ -24,7 +24,7 @@ for filewav in $DB/*/*wav; do
 
     filevad=${filewav/.wav/.vad}
 
-    $CMD -i $filewav -o $filevad || exit 1
+    $CMD -1 $ALPHA1 -2 $ALPHA2 -i $filewav -o $filevad || exit 1
 
 # Alternatively, uncomment to create output wave files
 #    filewavOut=${filewav/.wav/.vad.wav}
