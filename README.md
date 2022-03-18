@@ -110,11 +110,16 @@ Ejercicios
 
 	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para
 	  estar seguros de que un segmento de señal se corresponde con voz.
+	  
+	  Podemos ver un incremento aproximado de minimo 14dB para pasar de silencio a voz.
 
 	* Duración mínima razonable de los segmentos de voz y silencio.
+	  
+	  La duracion minima razonable para segmentos de silencio es 400ms y para la voz son 400ms tambien.	
 
 	* ¿Es capaz de sacar alguna conclusión a partir de la evolución de la tasa de cruces por cero?
-
+	  
+	  Podemos observar que cuando hay silencio hay un numero de cruces por zero muy elevado mientras que cuando hay voz esa tasa es muy pequeña.
 
 ### Desarrollo del detector de actividad vocal
 
