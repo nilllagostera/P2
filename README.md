@@ -138,7 +138,7 @@ Ejercicios
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
-  
+  ![Image text](https://github.com/nilllagostera/P2/blob/Llagostera-Aymerich/img/summary_final.png)
 
 ### Trabajos de ampliación
 
@@ -161,7 +161,8 @@ Ejercicios
 
 - Si lo desea, puede realizar también algún comentario acerca de la realización de la práctica que
   considere de interés de cara a su evaluación.
-
+  
+  Hemos programado los 4 estados (silence, voice, maybe voice y maybe silence) e intentado optimizar el codigo al máximo buscando el mejor valor de las alphas y del     minimo tiempo de silencio y voz.
 
 ### Antes de entregar la práctica
 
