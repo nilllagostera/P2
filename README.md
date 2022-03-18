@@ -129,13 +129,16 @@ Ejercicios
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
 
+  ![Image text](https://github.com/nilllagostera/P2/blob/Llagostera-Aymerich/img/wavesurfer_seg2.png)
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
+
+  Observamos que hay discrepancias en la señal entre el etiquetado manual y la detección automática al principio de esta debido al ruido inicial y lo mismo sucede,   	pero no con tanta intensidad, al final de la señal.
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
-
+  
 
 ### Trabajos de ampliación
 
